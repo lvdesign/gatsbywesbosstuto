@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from './src/components/Layout';
-import { OrderProvider } from './src/components/orderContext';
+import { OrderProvider } from './src/components/OrderContext';
 
 // Wrap the site Page
 export function wrapPageElement({element, props}){
