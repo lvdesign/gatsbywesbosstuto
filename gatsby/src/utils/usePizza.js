@@ -34,7 +34,7 @@ function removeFromOrder(index){
 // 3 - When someone submit ORDER
 async function submitOrder(e){
     e.preventDefault();
-    console.log(e);
+    //console.log(e);
     setLoading(true);
     setError(null); //  setError(null);
     //setMessage('gooooooooood  ');
@@ -48,7 +48,7 @@ async function submitOrder(e){
         email: values.email,
         mapleSyrup: values.mapleSyrup,
     };
-    console.log( body);
+    // console.log( body);
 
     // 4 - send this data fro checkOUT to serveless
     
@@ -65,7 +65,7 @@ async function submitOrder(e){
 
   const text = JSON.parse(await res.text());
   //const text = await res.text();
-  console.log(text);
+  //console.log(text);
 
   // check if everything worked
   if (res.status >= 400 && res.status < 600) {
